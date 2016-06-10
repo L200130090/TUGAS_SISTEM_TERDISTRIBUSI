@@ -1,8 +1,8 @@
 <?php 
 require_once("lib/nusoap.php");
-$c = new nusoap_client("http://l/semester-6/sistme-terdistribusi/nusoap/onepieceserver.php?wsdl", true);
+$c = new nusoap_client("http://l/semester-6/sistme-terdistribusi/nusoap/rahmafitriwserver.php?wsdl", true);
 ($x = $c->getError()) ? print($x) : 0;//if shorthand
-$h = $c->call("getInfo", array("name" => "ferrsy"));
+$h = $c->call("getInfo", array("name" => "rahmafw"));
 if ($c->fault){
 	die($c->fault);
 }else{
